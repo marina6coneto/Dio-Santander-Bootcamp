@@ -1,11 +1,16 @@
 from random import randint
 from time import sleep
+
 computador = randint(0, 5) # Esse comando faz o computador sortear um número
+
 print('Vou pensar em número entre 0 e 5, tente adivinhar!')
+
 jogador = int(input('Em que número eu pensei? '))
+
 print('Processando...')
 sleep(2)
+
 if jogador == computador:
     print('Parabéns, pensei nesse número! Você me venceu!')
 else:
-    print('Você perdeu! Eu pensei no número {} e não no {}.'.format(computador, jogador))
+    print(f'Você perdeu! Eu pensei no número {computador} e não no {jogador}.')
